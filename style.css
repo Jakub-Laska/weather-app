@@ -25,7 +25,7 @@ select, input, label, button {
 label {
     font-size: 2rem;
 }
-input, button {
+input, button, #goBack {
     display: none;
 }
 select, input, button {

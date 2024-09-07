@@ -3,6 +3,7 @@ const degrees = document.querySelector('input');
 const para = document.querySelector('p');
 let body = document.querySelector('body');
 const btn = document.querySelector('button');
+const backBtn = document.querySelector('#goBack');
 let choice;
 let degreeValue;
 
@@ -25,6 +26,7 @@ btn.addEventListener('click', getDegrees);
 function getDegrees() {
     degrees.style.display = 'none';
     btn.style.display = 'none';
+    backBtn.style.display = 'inline-block';
     degreeValue = degrees.value;
     console.log(degreeValue);
     outcome();
@@ -39,4 +41,10 @@ function outcome() {
     } else if (choice === 'sun' && degreeValue >= 50) {
         para.textContent = 'it is boiling hot';
     }
+}
+
+backBtn.addEventListener('click', refresh);
+
+function refresh() {
+    location.reload(true);
 }
