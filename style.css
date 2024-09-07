@@ -35,7 +35,7 @@ select, input, button {
 button {
     padding: .1rem;
 }
-form {
+p {
     display: flex;
     justify-content: center;
 }
