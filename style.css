@@ -1,0 +1,41 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    display: flex;
+    justify-content: center;
+    
+}
+#wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin-top: 30%;
+    gap: 1rem;
+}
+select, input, label, button {
+    text-align: center;
+    padding: 1.5rem;
+    font-weight: bold;
+    font-size: 1.1rem;
+    text-transform: capitalize;
+}
+label {
+    font-size: 2rem;
+}
+input, button {
+    display: none;
+}
+select, input, button {
+    width: 50%;
+    align-self: center;
+}
+button {
+    padding: .1rem;
+}
+form {
+    display: flex;
+    justify-content: center;
+}
