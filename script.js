@@ -30,11 +30,17 @@ function getDegrees() {
     backBtn.style.display = 'inline-block';
     degreeValue = degrees.value;
     console.log(degreeValue);
+
+    if (degreeValue == '') {
+    para.textContent =
+    'You have to input the degree value'
+    return;
+    } else {
     outcome();
+    }
 }
 // Main function responsible for the outcome
 function outcome() {
-    // if it is sunny
     if (choice === 'sun') {
         if (degreeValue >= 45) {
             para.textContent =
@@ -48,10 +54,10 @@ function outcome() {
         } else if (degreeValue < 5 && degreeValue >= -10){
             para.textContent =
             `is is ${degreeValue} degrees, sunny but it is really cold`;
-            } else {
-                para.textContent =
-                `extremely cold weather ${degreeValue} degrees, but at least it is sunny today`;
-            }
+        } else if (degreeValue < -10) {
+            para.textContent =
+            `extremely cold weather ${degreeValue} degrees, but at least it is sunny today`;
+        }
     // if it is cloudy
     } else if (choice === 'cloud') {
         if (degreeValue >= 45) {
@@ -66,10 +72,10 @@ function outcome() {
         } else if (degreeValue < 5 && degreeValue >= -10){
             para.textContent =
             `is is ${degreeValue} degrees, cloudy and really cold`;
-            } else {
-                para.textContent =
-                `extremely cold weather ${degreeValue} degrees, with lots of clouds`;
-            }
+        } else if (degreeValue < -10) {
+            para.textContent =
+            `extremely cold weather ${degreeValue} degrees, with lots of clouds`;
+        }
     // if it is rainy
     } else if (choice === 'rain') {
         if (degreeValue >= 45) {
@@ -84,10 +90,10 @@ function outcome() {
         } else if (degreeValue < 5 && degreeValue >= -10){
             para.textContent =
             `is is ${degreeValue} degrees, rainy with a high probability of sleet and it is really cold today`;
-            } else {
-                para.textContent =
-                `extremely cold weather ${degreeValue} degrees, with lots of hail or sleet`;
-            }
+        } else if (degreeValue < -10) {
+            para.textContent =
+            `extremely cold weather ${degreeValue} degrees, with lots of hail or sleet`;
+        }
     // if it is windy
     } else if (choice === 'wind') {
         if (degreeValue >= 45) {
@@ -102,12 +108,12 @@ function outcome() {
         } else if (degreeValue < 5 && degreeValue >= -10){
             para.textContent =
             `is is ${degreeValue} degrees, windy and it is really cold today`;
-            } else {
-                para.textContent =
-                `extremely cold weather ${degreeValue} degrees, with lots of wind`;
-            }
+        } else if (degreeValue < -10) {
+            para.textContent =
+            `extremely cold weather ${degreeValue} degrees, with lots of wind`;
+        }
     // if it is snowy
-    } else {
+    } else if (choice === 'snow') {
         if (degreeValue >= 45) {
             para.textContent =
             `extremely hot weather it is ${degreeValue} degrees, no chance of snow today`;
@@ -120,13 +126,12 @@ function outcome() {
         } else if (degreeValue < 5 && degreeValue >= -10){
             para.textContent =
             `is is ${degreeValue} degrees, snowy and it is really cold today`;
-            } else {
-                para.textContent =
-                `extremely cold weather ${degreeValue} degrees, with lots of snowing`;
-            }
-    }
+        } else if (degreeValue < -10) {
+            para.textContent =
+            `extremely cold weather ${degreeValue} degrees, with lots of snowing`;
+        }
+    } 
 }
-
 
 // refresh button
 backBtn.addEventListener('click', refresh);

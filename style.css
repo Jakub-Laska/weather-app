@@ -11,9 +11,12 @@ body{
 #wrapper {
     display: flex;
     flex-direction: column;
-    width: 50%;
-    margin-top: 30%;
+    width: 600px;
+    height: 400px; 
+    margin-top: 10%;
     gap: 1rem;
+    border: solid 1px black;
+    padding: 3rem;
 }
 select, input, label, button {
     text-align: center;
