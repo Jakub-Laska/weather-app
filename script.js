@@ -1,12 +1,13 @@
 const selector = document.querySelector('select');
 const degrees = document.querySelector('input');
-const para = document.querySelector('p');
+const para = document.querySelector('#message');
 let body = document.querySelector('body');
 const btn = document.querySelector('button');
 const backBtn = document.querySelector('#goBack');
 let choice;
 let degreeValue;
-
+let paraError = document.querySelector('#error')
+// function responsible for the appearence of the input on the screen
 selector.addEventListener('change', showInput);
 
 function showInput() {
@@ -17,9 +18,7 @@ function showInput() {
     degrees.style.display = 'inline-block';
     btn.style.display = 'inline-block';
     backBtn.style.display = 'inline-block';
-} else {
-    console.log('whoops');
-}
+    } 
 }
 // Function responsible for submition, getting the value of the input and launching main function
 btn.addEventListener('click', getDegrees);
@@ -32,10 +31,13 @@ function getDegrees() {
     console.log(degreeValue);
 
     if (degreeValue == '') {
-    para.textContent =
-    'You have to input the degree value'
+    paraError.textContent =
+    'You have to input the degree value';
+    degrees.style.display = 'inline-block';
+    btn.style.display = 'inline-block';
     return;
     } else {
+    paraError.textContent = '';
     outcome();
     }
 }

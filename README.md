@@ -1,7 +1,7 @@
 Weather forecast project (in progress) using html,css and js. 
 
 to do:
-- full functionality - almost done just need to write better outcome paragraphs 
+- full functionality - almost done just need to write better outcome paragraphs also no input value error message should not hide the input
 - style it
 - give better names
 - link to a weather site, some API maybe

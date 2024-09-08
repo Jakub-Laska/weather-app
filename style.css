@@ -3,20 +3,60 @@
     padding: 0;
     margin: 0;
 }
+/* cold */
+/* #16697A
+#489FB5
+#82C0CC
+#EDE7E3 */
+/* sunny
+#161032
+#FAFF81
+#FFC53A
+#E06D06 */
+/* rain
+#F0F3BD
+#028090
+#1A5E63
+#00BFB2 */
+/* cloud
+#090C08
+#474056
+#757083
+#8A95A5 */
+/* wind
+#495867
+#577399
+#BDD5EA
+#F7F7FF */
+/* main
+#2E5266
+#6E8898
+#9FB1BC
+#D3D0CB */
+html, body {
+    height: 100%;
+}
 body{
     display: flex;
-    justify-content: center;
-    
+    flex-direction: column;
+}
+html {   
+    background: linear-gradient(321deg, #6E8898 38%, #D3D0CB 100%);
+    height: 100%;
 }
 #wrapper {
     display: flex;
     flex-direction: column;
+    align-self: center;
     width: 600px;
-    height: 400px; 
+    height: 500px; 
     margin-top: 10%;
     gap: 1rem;
-    border: solid 1px black;
     padding: 3rem;
+    border: ridge 30px #2e526673;
+    border-radius: 10px;
+    background: #d3d0cb;
+    background: radial-gradient(circle, #d3d0cb 20%, #2e52668f 99%);
 }
 select, input, label, button {
     text-align: center;
@@ -41,4 +81,23 @@ button {
 p {
     display: flex;
     justify-content: center;
+}
+.header {
+    background-color: #6E8898;
+    height: 4rem;
+}
+.footer {
+    background-color: #2E5266;
+    height: 2rem;
+    text-align: center;
+}
+.wrap {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+.app {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
 }

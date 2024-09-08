@@ -8,20 +8,31 @@
     <script src="script.js" type="module"></script>
 </head>
 <body>
-    <div id="wrapper">
-        <label for="selection">What is the weather like?</label>
-        <select id="selection">
-            <option value="">Pick the weather</option>
-            <option value="sun">sunny</option>
-            <option value="cloud">cloudy</option>
-            <option value="rain">rainy</option>
-            <option value="wind">windy</option>
-            <option value="snow">snowy</option>
-        </select>
-            <input id="degreeInput" type="number" placeholder="how many degrees?">
-            <button>submit</button>
-            <p></p>
-            <button id="goBack">go back</button>
+    <div class="wrap">
+        <div class="header">
+            cos tam
+        </div>
+        <div class="app">
+            <div id="wrapper">
+                <label for="selection">What is the weather like?</label>
+                <select id="selection">
+                    <option value="">Pick the weather</option>
+                    <option value="sun">sunny</option>
+                    <option value="cloud">cloudy</option>
+                    <option value="rain">rainy</option>
+                    <option value="wind">windy</option>
+                    <option value="snow">snowy</option>
+                </select>
+                    <p id="error"></p>
+                    <input id="degreeInput" type="number" placeholder="how many degrees?">
+                    <button>submit</button>
+                    <button id="goBack">go back</button>
+                    <p id="message"></p>
+            </div>
+        </div>
+        <div class="footer">
+           <p class="footerPara">cos tam</p>
+        </div>
     </div>
 </body>
 </html>
