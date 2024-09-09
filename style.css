@@ -85,9 +85,10 @@ p {
 .header {
     background-color: #6E8898;
     height: 4rem;
+    text-align: center;
 }
 .footer {
-    background-color: #2E5266;
+    background-color: #2e52666c;
     height: 2rem;
     text-align: center;
 }
@@ -100,4 +101,15 @@ p {
     display: flex;
     flex-direction: column;
     flex: 1;
+}
+.footerPara {
+    margin-top: 7px;
+    text-decoration: none;
+}
+.footerPara a {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.652);
+}
+.footerPara a:hover {
+    opacity: 60%;
 }
