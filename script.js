@@ -140,7 +140,10 @@ function outcome() {
 backBtn.addEventListener('click', refresh);
 
 function refresh() {
-    location.reload(true);
+    selector.style.display = 'inline-block';
+    degrees.style.display = 'none';
+    btn.style.display = 'none';
+    backBtn.style.display = 'none';
 }
 
 // dark mode
