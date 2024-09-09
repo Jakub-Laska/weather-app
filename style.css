@@ -55,8 +55,8 @@ html {
     padding: 3rem;
     border: ridge 30px #2e526673;
     border-radius: 10px;
-    background: #d3d0cb;
-    background: radial-gradient(circle, #d3d0cb 20%, #2e52668f 99%);
+    background: #45acd100;
+    color: rgba(255, 255, 255, 0.879);
 }
 select, input, label, button {
     text-align: center;

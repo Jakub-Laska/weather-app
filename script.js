@@ -142,3 +142,21 @@ backBtn.addEventListener('click', refresh);
 function refresh() {
     location.reload(true);
 }
+
+// dark mode
+let modeBtn = document.querySelector('#darkMode');
+
+modeBtn.addEventListener('click', modeSwitch);
+
+function modeSwitch() {
+    let whole = document.querySelector('*');
+    let whichMode = modeBtn.textContent;
+
+    if (whichMode === 'dark mode') {
+    whole.style.filter = 'brightness(0.6)';
+    modeBtn.textContent = `light mode`
+    } else {
+    whole.style.filter = 'brightness(1)';
+    modeBtn.textContent = `dark mode`
+    }
+}
