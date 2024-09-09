@@ -2,11 +2,12 @@ const selector = document.querySelector('select');
 const degrees = document.querySelector('input');
 const para = document.querySelector('#message');
 let body = document.querySelector('body');
-const btn = document.querySelector('button');
+const btn = document.querySelector('#submitBtn');
 const backBtn = document.querySelector('#goBack');
 let choice;
 let degreeValue;
 let paraError = document.querySelector('#error')
+
 // function responsible for the appearence of the input on the screen
 selector.addEventListener('change', showInput);
 
