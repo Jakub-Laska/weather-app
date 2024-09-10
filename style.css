@@ -33,21 +33,16 @@
 #6E8898
 #9FB1BC
 #D3D0CB */
-html, body {
-    height: 100%;
-}
 body{
     display: flex;
     flex-direction: column;
-}
-html {   
     background: linear-gradient(321deg, #6E8898 38%, #D3D0CB 100%);
-    height: 100%;
 }
 #wrapper {
     display: flex;
     flex-direction: column;
     align-self: center;
+    align-items: center;
     width: 600px;
     height: 500px; 
     margin-top: 10%;
@@ -58,7 +53,7 @@ html {
     background: #45acd100;
     color: rgba(255, 255, 255, 0.879);
 }
-select, input, label, button {
+select, input, label, #submitBtn, #goBack {
     text-align: center;
     padding: 1.5rem;
     font-weight: bold;
@@ -68,14 +63,14 @@ select, input, label, button {
 label {
     font-size: 2rem;
 }
-input, button, #goBack {
+input, #submitBtn, #goBack {
     display: none;
 }
-select, input, button {
+select, input, #submitBtn, #goBack {
     width: 50%;
     align-self: center;
 }
-button {
+#submitBtn, #goBack {
     padding: .1rem;
 }
 p {
@@ -113,10 +108,15 @@ a {
     color: rgba(245, 245, 245, 0.674);
 }
 a:hover {
-    opacity: 60%;
+    opacity: .6;
+    cursor: pointer;
 }
 #darkMode {
     display: inline-block;
+}
+#darkMode:hover {
+    opacity: .6;
+    cursor: pointer;
 }
 .right {
     display: flex;
@@ -126,4 +126,46 @@ a:hover {
     width: 250px;
     display: flex;
     align-self: center;
+}
+#moonIcon {
+    width: 15px;
+}
+.darkMode {
+    padding: 0;
+    width: 0;
+}
+.dropDown {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1px;
+    width: 210px;
+}
+.select {
+    text-align: center;
+    font-size: 1.1rem;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    border: 1px solid black;
+    width: 210px;
+    padding: .2rem 0;
+}
+#selection {
+    font-weight: bold;
+    padding: .5rem 0;
+    margin-bottom: 1rem;
+    background-color: #00000052;
+}
+.select:hover {
+    opacity: .6;
+    cursor: pointer;
+}
+.option {
+    display: none;
+}
+.options {
+    background-color: #00000052;
+    display: flex;
+    flex-direction: column;
+    gap: .2rem;
 }

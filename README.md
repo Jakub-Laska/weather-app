@@ -13,5 +13,3 @@ to do:
 - images pop-up with picked weather
 - different style based on selected weather, both in light and dark mode
 - alerts on extreme weathers
-- different text messages on random
-- timed alert with invite to my github

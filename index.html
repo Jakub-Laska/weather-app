@@ -14,21 +14,23 @@
                 <h1>Weather-app</h1>
             </div>
             <div class="right">
-                <button id="darkMode">dark mode</button>
+                <button id="darkMode" value="light"><img id="moonIcon" src="moon.png"></button>
                 <a href="https://www.accuweather.com/en/pl/warsaw/274663/weather-forecast/274663#google_vignette" target="_blank">current weather in Warsaw</a>
             </div>
         </div>
         <div class="app">
             <div id="wrapper">
                 <label for="selection">What is the weather like?</label>
-                <select id="selection">
-                    <option value="">Pick the weather</option>
-                    <option value="sun">sunny</option>
-                    <option value="cloud">cloudy</option>
-                    <option value="rain">rainy</option>
-                    <option value="wind">windy</option>
-                    <option value="snow">snowy</option>
-                </select>
+                <div class="dropDown">
+                    <div id="selection" class="select">pick the weather type</div>
+                    <ul class="options">
+                        <li class="optionA select option">sunny</li>
+                        <li class="optionB select option">cloudy</li>
+                        <li class="optionC select option">rainy</li>
+                        <li class="optionD select option">windy</li>
+                        <li class="optionE select option">snowy</li>
+                    </ul>
+                </div>
                     <p id="error"></p>
                     <input id="degreeInput" type="number" placeholder="how many degrees?">
                     <button id="submitBtn">submit</button>

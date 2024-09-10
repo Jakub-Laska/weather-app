@@ -9,7 +9,7 @@ let degreeValue;
 let paraError = document.querySelector('#error')
 
 // function responsible for the appearence of the input on the screen
-selector.addEventListener('change', showInput);
+// selector.addEventListener('change', showInput);
 
 function showInput() {
     choice = selector.value;
@@ -144,6 +144,7 @@ function refresh() {
     degrees.style.display = 'none';
     btn.style.display = 'none';
     backBtn.style.display = 'none';
+    paraError.textContent = '';
 }
 
 // dark mode
@@ -152,14 +153,47 @@ let modeBtn = document.querySelector('#darkMode');
 modeBtn.addEventListener('click', modeSwitch);
 
 function modeSwitch() {
-    let whole = document.querySelector('*');
-    let whichMode = modeBtn.textContent;
+    let whole = document.body;
+    let html = document.documentElement;
+    let icon = document.querySelector('#modeIcon');
+    let options = document.querySelectorAll('.options');
+    let whichMode = modeBtn.value;
 
-    if (whichMode === 'dark mode') {
+    if (whichMode === 'light') {
     whole.style.filter = 'brightness(0.6)';
-    modeBtn.textContent = `light mode`
+    html.style.filter = 'brightness(0.6)';
+    options.style.backgroundColor = 'red';
+    modeBtn.value = `dark`;
+    icon.src = 'sun.png';
     } else {
     whole.style.filter = 'brightness(1)';
-    modeBtn.textContent = `dark mode`
+    html.style.filter = 'brightness(1)';
+    options.style.backgroundColor = 'blue';
+    modeBtn.value = `light`;
+    icon.src = 'moon.png';
     }
+}
+
+// menu dropdown and selection function
+let menu = document.getElementById('selection');
+let menuOptions = document.querySelectorAll('.option');
+let menuValue = 1;
+
+menu.addEventListener('click', dropDown);
+
+function dropDown() {
+    if (menuValue === 1) {
+        menuOptions.forEach(showOptions);
+    } else if (menuValue === 0) {
+        menuOptions.forEach(hideOptions);
+    }
+}
+
+function showOptions(option) {
+    option.style.display = 'inline-block';
+    menuValue = 0;
+}
+function hideOptions(option) {
+    option.style.display = 'none';
+    menuValue = 1;
 }
