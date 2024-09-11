@@ -3,36 +3,49 @@
     padding: 0;
     margin: 0;
 }
-/* cold */
-/* #16697A
+.cold {
+color: 
+#16697A
 #489FB5
 #82C0CC
-#EDE7E3 */
-/* sunny
-#161032
-#FAFF81
-#FFC53A
-#E06D06 */
-/* rain
+#EDE7E3
+}
+
+.rain {
+color: 
 #F0F3BD
 #028090
 #1A5E63
-#00BFB2 */
-/* cloud
+#00BFB2
+}
+.cloud {
+color: 
 #090C08
 #474056
 #757083
-#8A95A5 */
-/* wind
+#8A95A5
+}
+.wind {
+color: 
 #495867
 #577399
 #BDD5EA
-#F7F7FF */
-/* main
+#F7F7FF
+}
+.main {
+color:
 #2E5266
 #6E8898
 #9FB1BC
-#D3D0CB */
+#D3D0CB
+}
+.sunny {
+    color:
+    #161032
+    #FAFF81
+    #FFC53A
+    #E06D06 ;
+}
 body{
     display: flex;
     flex-direction: column;
