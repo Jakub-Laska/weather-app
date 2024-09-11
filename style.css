@@ -88,10 +88,16 @@ p {
 }
 .footer {
     background-color: #2e52666c;
-    height: 2rem;
     display: flex;
+    height: 2rem;
+    padding: 0rem 2rem;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
+}
+.footerDown {
+    display: flex;
+    gap: 1rem;
+    font-size: 10px;
 }
 .wrap {
     display: flex;
@@ -112,7 +118,8 @@ a:hover {
     cursor: pointer;
 }
 #darkMode {
-    display: inline-block;
+    background-color: #6E8898;
+    border: none;
 }
 #darkMode:hover {
     opacity: .6;
@@ -120,15 +127,14 @@ a:hover {
 }
 .right {
     display: flex;
-    gap: 4rem;
+    gap: 3rem;
 }
 .right a {
-    width: 250px;
     display: flex;
     align-self: center;
 }
 #moonIcon {
-    width: 15px;
+    width: 20px;
 }
 .darkMode {
     padding: 0;
@@ -168,4 +174,7 @@ a:hover {
     display: flex;
     flex-direction: column;
     gap: .2rem;
+}
+h1 {
+    letter-spacing: 2px;
 }

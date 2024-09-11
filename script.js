@@ -1,4 +1,3 @@
-const selector = document.querySelector('select');
 const degrees = document.querySelector('input');
 const para = document.querySelector('#message');
 let body = document.querySelector('body');
@@ -8,18 +7,39 @@ let choice;
 let degreeValue;
 let paraError = document.querySelector('#error')
 
-// function responsible for the appearence of the input on the screen
-// selector.addEventListener('change', showInput);
 
+// menu dropdown toggle
+let menu = document.getElementById('selection');
+let menuOptions = document.querySelectorAll('.option');
+let menuValue = 1;
+
+menu.addEventListener('click', dropDown);
+
+function toggleOptions(option) {
+    if (menuValue === 1) {
+        option.style.display = 'inline-block';
+    } else {
+        option.style.display = 'none';
+    }
+}
+function dropDown() {
+        menuOptions.forEach(toggleOptions);
+        menuValue = (menuValue === 1) ? 0 : 1;
+        menuOptions.forEach(addlistener);
+}
+function addlistener (option) {
+    option.addEventListener('click', showInput);
+}
+// input toggle
 function showInput() {
-    choice = selector.value;
-
-    if (typeof choice === 'string') {
-    selector.style.display = 'none';
+    menuOptions.forEach(hideOptions);
     degrees.style.display = 'inline-block';
+    menu.style.display = 'none';
     btn.style.display = 'inline-block';
     backBtn.style.display = 'inline-block';
-    } 
+}
+function hideOptions(option) {
+    option.style.display = 'none';
 }
 // Function responsible for submition, getting the value of the input and launching main function
 btn.addEventListener('click', getDegrees);
@@ -27,7 +47,6 @@ btn.addEventListener('click', getDegrees);
 function getDegrees() {
     degrees.style.display = 'none';
     btn.style.display = 'none';
-    backBtn.style.display = 'inline-block';
     degreeValue = degrees.value;
     console.log(degreeValue);
 
@@ -135,18 +154,17 @@ function outcome() {
         }
     } 
 }
-
 // refresh button
 backBtn.addEventListener('click', refresh);
 
 function refresh() {
-    selector.style.display = 'inline-block';
+    menu.style.display = 'inline-block';
     degrees.style.display = 'none';
     btn.style.display = 'none';
     backBtn.style.display = 'none';
     paraError.textContent = '';
+    menuValue = 1;
 }
-
 // dark mode
 let modeBtn = document.querySelector('#darkMode');
 
@@ -155,45 +173,19 @@ modeBtn.addEventListener('click', modeSwitch);
 function modeSwitch() {
     let whole = document.body;
     let html = document.documentElement;
-    let icon = document.querySelector('#modeIcon');
+    let icon = document.querySelector('#moonIcon');
     let options = document.querySelectorAll('.options');
     let whichMode = modeBtn.value;
 
     if (whichMode === 'light') {
-    whole.style.filter = 'brightness(0.6)';
-    html.style.filter = 'brightness(0.6)';
-    options.style.backgroundColor = 'red';
+    whole.style.filter = 'brightness(0.85)';
+    html.style.filter = 'brightness(0.85)';
     modeBtn.value = `dark`;
     icon.src = 'sun.png';
     } else {
     whole.style.filter = 'brightness(1)';
     html.style.filter = 'brightness(1)';
-    options.style.backgroundColor = 'blue';
     modeBtn.value = `light`;
     icon.src = 'moon.png';
     }
-}
-
-// menu dropdown and selection function
-let menu = document.getElementById('selection');
-let menuOptions = document.querySelectorAll('.option');
-let menuValue = 1;
-
-menu.addEventListener('click', dropDown);
-
-function dropDown() {
-    if (menuValue === 1) {
-        menuOptions.forEach(showOptions);
-    } else if (menuValue === 0) {
-        menuOptions.forEach(hideOptions);
-    }
-}
-
-function showOptions(option) {
-    option.style.display = 'inline-block';
-    menuValue = 0;
-}
-function hideOptions(option) {
-    option.style.display = 'none';
-    menuValue = 1;
 }
