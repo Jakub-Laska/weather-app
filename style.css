@@ -22,8 +22,9 @@ color:
 color: 
 #090C08
 #474056
+#4740567f
 #757083
-#8A95A5
+#aab0b9
 }
 .wind {
 color: 
@@ -41,7 +42,7 @@ color:
 }
 .sunny {
     color:
-    #161032
+    #211947
     #FAFF81
     #FFC53A
     #E06D06 ;
@@ -49,7 +50,9 @@ color:
 body{
     display: flex;
     flex-direction: column;
-    background: linear-gradient(321deg, #6E8898 38%, #D3D0CB 100%);
+    color: #b8b8b8e0;
+    text-shadow: black 0 0 4px;
+    background-color: #444444;
 }
 #wrapper {
     display: flex;
@@ -61,12 +64,11 @@ body{
     margin-top: 10%;
     gap: 1rem;
     padding: 3rem;
-    border: ridge 30px #2e526673;
+    border: ridge 25px #0000004f;
     border-radius: 10px;
-    background: #45acd100;
-    color: rgba(255, 255, 255, 0.879);
+    box-shadow: black 0px 0px 15px;
 }
-select, input, label, #submitBtn, #goBack {
+select, input, label {
     text-align: center;
     padding: 1.5rem;
     font-weight: bold;
@@ -83,29 +85,27 @@ select, input, #submitBtn, #goBack {
     width: 50%;
     align-self: center;
 }
-#submitBtn, #goBack {
-    padding: .1rem;
-}
 p {
     display: flex;
     justify-content: center;
 }
 .header {
-    background-color: #6E8898;
+    background-color: #212830;
     height: 4rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 0 2rem;
-    color: rgba(245, 245, 245, 0.85);
+    box-shadow: black 0px 0px 10px;
 }
 .footer {
-    background-color: #2e52666c;
+    background-color: #212830;
     display: flex;
     height: 2rem;
     padding: 0rem 2rem;
     align-items: center;
     justify-content: space-between;
+    box-shadow: black 0px 0px 10px;
 }
 .footerDown {
     display: flex;
@@ -124,14 +124,14 @@ p {
 }
 a {
     text-decoration: none;
-    color: rgba(245, 245, 245, 0.674);
+    color: #b8b8b8e0;
 }
 a:hover {
     opacity: .6;
     cursor: pointer;
 }
 #darkMode {
-    background-color: #6E8898;
+    background-color: transparent;
     border: none;
 }
 #darkMode:hover {
@@ -165,29 +165,63 @@ a:hover {
     font-size: 1.1rem;
     text-transform: capitalize;
     letter-spacing: 1px;
-    border: 1px solid black;
-    width: 210px;
+    border-radius: 5px;
+    width: 220px;
     padding: .2rem 0;
 }
 #selection {
-    font-weight: bold;
     padding: .5rem 0;
     margin-bottom: 1rem;
-    background-color: #00000052;
+    background-color: #00000075;
 }
-.select:hover {
-    opacity: .6;
+#selection:hover {
+    box-shadow: #A7C7E7 0 0 10px;
     cursor: pointer;
+}
+.option:hover {
+    background-color: #00000075;
 }
 .option {
     display: none;
+    border-radius: 5px;
+    width: 200px;
+    font-size: 14px;
 }
 .options {
     background-color: #00000052;
+    border-radius: 5px;
     display: flex;
     flex-direction: column;
-    gap: .2rem;
+    align-items: center;
+    gap: .4rem;
+    padding: .5rem 0;
 }
 h1 {
     letter-spacing: 2px;
+}
+#degreeInput {
+    border-radius: 5px;
+    border: none;
+    background-color: #00000052;
+    font-size: 14px;
+    color: white;
+}
+.buttons {
+    display: flex;
+    width: 200px;
+    gap: .2rem;
+}
+.btn {
+    border-radius: 5px;
+    border: none;
+    padding: .4rem;
+    font-size: 10px;
+    background-color: #00000075;
+    color: white;
+    font-weight: bold;
+}
+.btn:hover {
+    cursor: pointer;
+    box-shadow: #A7C7E7 0 0 5px;
+    background-color: #00000090;
 }
