@@ -1,16 +1,11 @@
 Weather forecast project (in progress) using html,css and js. 
 
 to do:
-- full functionality - almost done just need to write better outcome paragraphs
-- style it
-- different styles based on picked weather type
-- give better names
-- link to a weather site, some API maybe
-- dark,light mode
-- icons
-- header
-- footer
-- sounds
+- write better outcome paragraphs
+- add rest of the themes, work on color palletes and style
+- give better names, tidy your code
+- link to a weather site, some API maybe at the bottom
+- icon
 - images pop-up with picked weather
-- different style based on selected weather, both in light and dark mode
 - alerts on extreme weathers
+- add animations based on the weather type
