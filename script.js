@@ -102,26 +102,30 @@ function defaultTheme() {
 }
 // sunny theme
 function sunnyTheme() {
+    modeBtn.style.boxShadow = '#000000 0 0 20px';
     header.style.backgroundColor = '#FFC53A';
+    header.style.boxShadow = '#000000 -5px -5px 20px';
+    footer.style.boxShadow = '#000000 5px 5px 20px';
     footer.style.backgroundColor = '#FFC53A';
-    wrapper.style.borderColor = '#211947d5';
     document.body.style.background = 'linear-gradient(321deg, #E06D06  2%, #FAFF81  100%)';
-    document.body.style.color = '#211947';
+    document.body.style.color = '#000000';
     document.body.style.textShadow = 'none';
     anchor.forEach(element => {
-        element.style.color = '#211947';
+        element.style.color = '#000000';
     });
 }
 //cloudy theme
 function cloudyTheme() {
-    header.style.backgroundColor = '#090C08';
-    footer.style.backgroundColor = '#090C08';
-    wrapper.style.borderColor = '#4740567f';
+    header.style.backgroundColor = '#474056';
+    footer.style.backgroundColor = '#474056';
+    header.style.boxShadow = '#000000 -5px -5px 20px';
+    footer.style.boxShadow = '#000000 5px 5px 20px';
+    modeBtn.style.boxShadow = '#000000 0 0 20px';
     document.body.style.background = 'linear-gradient(321deg, #474056  2%, #8A95A5  100%)';
-    document.body.style.color = '#aab0b9';
-    document.body.style.textShadow = 'black 0 0 4px';
+    document.body.style.color = '#000000';
+    document.body.style.textShadow = 'black 0 0 0px';
     anchor.forEach(element => {
-        element.style.color = '#aab0b9';
+        element.style.color = '#000000';
     });
 }
 
@@ -132,18 +136,17 @@ let degreeValue;
 function getDegrees() {
   degrees.style.display = "none";
   btn.style.display = "none";
-  backBtn.style.marginLeft = '50px';
   degreeValue = degrees.value;
     paraError.textContent = '';
 
   if (degreeValue == "") {
-    paraError.textContent = "You have to input the degree value";
+    paraError.textContent = "* You have to input the degree value *";
     degrees.style.display = "inline-block";
     btn.style.display = "inline-block";
     return;
   } else {
     degrees.style.display = "none";
-    // btn.style.display = 'none';
+    backBtn.style.marginLeft = '60px';
     outcome();
   }
 }

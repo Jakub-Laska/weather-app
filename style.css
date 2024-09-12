@@ -206,7 +206,6 @@ h1 {
     border: none;
     background-color: #00000052;
     font-size: 1.5rem;
-    color: white;
 }
 .buttons {
     display: flex;
@@ -222,6 +221,8 @@ h1 {
 }
 .btn:hover {
     cursor: pointer;
-    box-shadow: #A7C7E7 0 0 5px;
     background-color: #00000090;
+}
+input::placeholder {
+    color: #000000;
 }
