@@ -20,7 +20,7 @@ function dropDown() {
 function toggleOptions(option) {
   if (menuValue === 1) {
     option.style.display = "inline-block";
-  optionsBackground.style.width = '220px';
+  optionsBackground.style.width = '300px';
   } else {
     option.style.display = "none";
   optionsBackground.style.width = '';
@@ -91,14 +91,13 @@ let wrapper = document.querySelector('#wrapper');
 
 //default theme
 function defaultTheme() {
-    header.style.backgroundColor = '#212830';
-    footer.style.backgroundColor = '#212830';
-    wrapper.style.borderColor = '#0000004f';
+    header.style.backgroundColor = '#000000';
+    footer.style.backgroundColor = '#000000';
     document.body.style.background = '';
-    document.body.style.color = '#b8b8b8e0';
+    document.body.style.color = '#A7C7E7';
     document.body.style.textShadow = 'black 0 0 4px';
     anchor.forEach(element => {
-        element.style.color = '#b8b8b8e0';
+        element.style.color = '#A7C7E7';
     });
 }
 // sunny theme

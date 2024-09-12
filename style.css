@@ -59,9 +59,9 @@ body{
     flex-direction: column;
     align-self: center;
     align-items: center;
-    width: 600px;
+    width: 800px;
     height: 500px; 
-    margin-top: 10%;
+    margin-top: 5%;
     gap: 1rem;
     padding: 3rem;
     border-radius: 10px;
@@ -70,11 +70,11 @@ select, input, label {
     text-align: center;
     padding: 1.5rem;
     font-weight: bold;
-    font-size: 1.1rem;
     text-transform: capitalize;
 }
 label {
-    font-size: 2rem;
+    font-size: 3rem;
+    margin-bottom: 1rem;
 }
 input, #submitBtn, #goBack {
     display: none;
@@ -94,7 +94,6 @@ p {
     align-items: center;
     justify-content: space-between;
     padding: 0 2rem;
-    /* box-shadow: black 0px 0px 10px; */
     box-shadow: #A7C7E7 -5px -5px 20px;
 }
 .footer {
@@ -165,11 +164,11 @@ a:hover {
 }
 .select {
     text-align: center;
-    font-size: 1.1rem;
+    font-size: 1.5rem;
     text-transform: capitalize;
     letter-spacing: 1px;
     border-radius: 5px;
-    width: 220px;
+    width: 300px;
     padding: .2rem 0;
 }
 #selection {
@@ -178,15 +177,17 @@ a:hover {
     background-color: #4e4d4d57;
 }
 #selection:hover, .option:hover {
-    box-shadow: #A7C7E7 0 0 10px;
     cursor: pointer;
     background-color: #000000;
+}
+#selection:hover {
+    box-shadow: #A7C7E7 0 0 10px;
 }
 .option {
     display: none;
     border-radius: 5px;
-    width: 200px;
-    font-size: 14px;
+    width: 280px;
+    font-size: 1.2rem;
 }
 .options {
     background-color: #4e4d4d57;
@@ -204,21 +205,19 @@ h1 {
     border-radius: 5px;
     border: none;
     background-color: #00000052;
-    font-size: 14px;
+    font-size: 1.5rem;
     color: white;
 }
 .buttons {
     display: flex;
-    width: 200px;
+    width: 250px;
     gap: .2rem;
 }
 .btn {
     border-radius: 5px;
     border: none;
     padding: .4rem;
-    font-size: 10px;
     background-color: #00000075;
-    color: white;
     font-weight: bold;
 }
 .btn:hover {
