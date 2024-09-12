@@ -3,50 +3,6 @@
     padding: 0;
     margin: 0;
 }
-.cold {
-color: 
-#28b2ceb7
-#3153b1
-#82C0CC
-#EDE7E3
-}
-
-.rain {
-color: 
-#bddff3
-#028090
-#0e3133
-#00BFB2
-}
-.cloud {
-color: 
-#090C08
-#474056
-#4740567f
-#757083
-#aab0b9
-}
-.wind {
-color: 
-#495867
-#577399
-#BDD5EA
-#F7F7FF
-}
-.main {
-color:
-#2E5266
-#6E8898
-#9FB1BC
-#D3D0CB
-}
-.sunny {
-    color:
-    #211947
-    #FAFF81
-    #FFC53A
-    #E06D06 ;
-}
 body{
     display: flex;
     flex-direction: column;
@@ -227,4 +183,8 @@ h1 {
 }
 input::placeholder {
     color: #000000;
+}
+#message {
+    font-size: 1.3rem;
+    text-align: center;
 }

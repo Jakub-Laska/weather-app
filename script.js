@@ -188,6 +188,7 @@ function getDegrees() {
   } else {
     degrees.style.display = "none";
     backBtn.style.marginLeft = '60px';
+    backBtn.style.marginTop = '30px';
     outcome();
   }
 }
@@ -296,6 +297,7 @@ function refresh() {
   degrees.value = '';
   optionsBackground.style.width = '';
   backBtn.style.marginLeft = '';
+  backBtn.style.marginTop = '';
   defaultTheme();
 }
 // dark mode
