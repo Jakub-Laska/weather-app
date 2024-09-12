@@ -63,7 +63,7 @@ p {
     justify-content: space-between;
     box-shadow: #A7C7E7 5px 5px 20px;
 }
-.footerDown {
+.footerRight {
     display: flex;
     gap: 1rem;
     font-size: 10px;
