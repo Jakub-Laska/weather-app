@@ -156,6 +156,20 @@ function windyTheme() {
         element.style.color = '#577399';
     });
 }
+// snowy theme
+function snowyTheme() {
+    header.style.backgroundColor = '#3153b1';
+    footer.style.backgroundColor = '#3153b1';
+    header.style.boxShadow = '#000000 -5px -5px 20px';
+    footer.style.boxShadow = '#000000 5px 5px 20px';
+    modeBtn.style.boxShadow = '#000000 0 0 20px';
+    document.body.style.background = 'linear-gradient(321deg, #489FB5  2%, #EDE7E3  90%)';
+    document.body.style.color = '#EDE7E3';
+    document.body.style.textShadow = 'black 0 0 0px';
+    anchor.forEach(element => {
+        element.style.color = '#EDE7E3';
+    });
+}
 // Function responsible for submition, getting the value of the input and launching main function
 btn.addEventListener("click", getDegrees);
 let degreeValue;
