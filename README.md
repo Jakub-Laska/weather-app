@@ -5,4 +5,4 @@ to do:
 - link to a weather site, some API maybe at the bottom
 - images pop-up with picked weather
 - add animations based on the weather type
-- finish readme what you have learned
+- finish readme write what you have learned 
