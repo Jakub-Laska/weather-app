@@ -10,7 +10,7 @@ body{
     text-shadow: black 0 0 4px;
     background-color: hsla(0, 0%, 0%, 0.94);
 }
-#wrapper {
+#appWrapper {
     display: flex;
     flex-direction: column;
     align-self: center;
@@ -22,7 +22,7 @@ body{
     padding: 3rem;
     border-radius: 10px;
 }
-select, input, label {
+input, label {
     text-align: center;
     padding: 1.5rem;
     font-weight: bold;
@@ -35,8 +35,6 @@ label {
 }
 input, #submitBtn, #goBack {
     display: none;
-}
-select, input, #submitBtn, #goBack {
     width: 50%;
     align-self: center;
 }
@@ -53,6 +51,14 @@ p {
     justify-content: space-between;
     padding: 0 2rem;
     box-shadow: #A7C7E7 -5px -5px 20px;
+}
+.headerRight {
+    display: flex;
+    gap: 3rem;
+}
+.headerRight a {
+    display: flex;
+    align-self: center;
 }
 .footer {
     background-color: #090C08;
@@ -86,7 +92,7 @@ a:hover {
     opacity: .6;
     cursor: pointer;
 }
-#darkMode {
+#darkModeBtn {
     background-color: white;
     border: none;
     width: 30px;
@@ -94,25 +100,13 @@ a:hover {
     border-radius: 100%;
     box-shadow: #A7C7E7 0 0 20px;
 }
-#darkMode:hover {
+#darkModeBtn:hover {
     opacity: .6;
     cursor: pointer;
-}
-.right {
-    display: flex;
-    gap: 3rem;
-}
-.right a {
-    display: flex;
-    align-self: center;
 }
 #moonIcon {
     width: 20px;
 }    
-.darkMode {
-    padding: 0;
-    width: 0;
-}
 .dropDown {
     display: flex;
     flex-direction: column;

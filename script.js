@@ -87,7 +87,7 @@ function snowy() {
 let header = document.querySelector('.header');
 let footer = document.querySelector('.footer');
 let anchor = document.querySelectorAll('a');
-let wrapper = document.querySelector('#wrapper');
+let wrapper = document.querySelector('#appWrapper');
 
 //default theme
 function defaultTheme() {
@@ -301,8 +301,8 @@ function refresh() {
   defaultTheme();
 }
 // dark mode
-let modeBtn = document.querySelector("#darkMode");
-
+let modeBtn = document.querySelector("#darkModeBtn");
+modeBtn.value = 'light';
 modeBtn.addEventListener("click", modeSwitch);
 
 function modeSwitch() {
