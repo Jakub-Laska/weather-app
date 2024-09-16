@@ -209,10 +209,10 @@ input::placeholder {
         width: 100%;
         padding: 2rem;
     }
-    .dropDown, .buttons {
-        width: 100%;
+    #degreeInput {
+        font-size: .6rem;
     }
-    .btn {
-        width: 100%;
+    #message {
+        font-size: .9rem;
     }
 }
