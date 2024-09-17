@@ -95,7 +95,7 @@ function defaultTheme() {
     footer.style.backgroundColor = '#000000';
     document.body.style.background = '';
     document.body.style.color = '#A7C7E7';
-    document.body.style.textShadow = 'black 0 0 4px';
+    document.body.style.textShadow = 'black 0 0 5px';
     anchor.forEach(element => {
         element.style.color = '#A7C7E7';
     });
@@ -107,6 +107,7 @@ function sunnyTheme() {
     header.style.boxShadow = '#000000 -5px -5px 20px';
     footer.style.boxShadow = '#000000 5px 5px 20px';
     footer.style.backgroundColor = '#FFC53A';
+    para.style.textShadow = '#000000 0px 0px 10px';
     document.body.style.background = 'linear-gradient(321deg, #E06D06  2%, #FAFF81  100%)';
     document.body.style.color = '#000000';
     document.body.style.textShadow = 'none';
@@ -121,6 +122,7 @@ function cloudyTheme() {
     header.style.boxShadow = '#000000 -5px -5px 20px';
     footer.style.boxShadow = '#000000 5px 5px 20px';
     modeBtn.style.boxShadow = '#000000 0 0 20px';
+    para.style.textShadow = '#474056 0px 0px 10px';
     document.body.style.background = 'linear-gradient(321deg, #474056  2%, #8A95A5  100%)';
     document.body.style.color = '#000000';
     document.body.style.textShadow = 'black 0 0 0px';
@@ -135,6 +137,7 @@ function rainyTheme() {
     header.style.boxShadow = '#000000 -5px -5px 20px';
     footer.style.boxShadow = '#000000 5px 5px 20px';
     modeBtn.style.boxShadow = '#000000 0 0 20px';
+    para.style.textShadow = '#000000 0px 0px 8px';
     document.body.style.background = 'linear-gradient(321deg, #F0F3BD  2%, #1A5E63  90%)';
     document.body.style.color = '#A7C7E7';
     document.body.style.textShadow = 'black 0 0 0px';
@@ -149,6 +152,7 @@ function windyTheme() {
     header.style.boxShadow = '#000000 -5px -5px 20px';
     footer.style.boxShadow = '#000000 5px 5px 20px';
     modeBtn.style.boxShadow = '#000000 0 0 20px';
+    para.style.textShadow = '#000000 0px 0px 1px';
     document.body.style.background = 'linear-gradient(321deg, #BDD5EA  2%, #F7F7FF  90%)';
     document.body.style.color = '#577399';
     document.body.style.textShadow = 'black 0 0 0px';
@@ -163,6 +167,7 @@ function snowyTheme() {
     header.style.boxShadow = '#000000 -5px -5px 20px';
     footer.style.boxShadow = '#000000 5px 5px 20px';
     modeBtn.style.boxShadow = '#000000 0 0 20px';
+    para.style.textShadow = '#000000 0px 0px 10px';
     document.body.style.background = 'linear-gradient(321deg, #489FB5  2%, #EDE7E3  90%)';
     document.body.style.color = '#EDE7E3';
     document.body.style.textShadow = 'black 0 0 0px';

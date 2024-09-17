@@ -8,7 +8,7 @@ body{
     flex-direction: column;
     min-height: 100vh;
     color: #A7C7E7;
-    text-shadow: black 0 0 4px;
+    text-shadow: black 0 0 10px;
     background-color: hsla(0, 0%, 0%, 0.94);
 }
 #appWrapper {
